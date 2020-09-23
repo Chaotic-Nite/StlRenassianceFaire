@@ -1,0 +1,49 @@
+body {
+  background-image: url("images/steelgray-print.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("images/blueVariant-print.png");
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  background-image: url("images/blue-abstract-nav.png"),
+    linear-gradient(#2f9fe0, #263ad1, #000000);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.nav-bar {
+  padding: 15px;
+}
+
+.nav-bar li a {
+  color: white;
+  text-align: center;
+  padding: 25px 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-bar li a:hover {
+  background-color: rgba(0, 51, 128, 0.5);
+}

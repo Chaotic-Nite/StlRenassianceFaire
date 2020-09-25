@@ -1,3 +1,6 @@
+<!--Created September 23rd
+    by Noel Kling -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +12,7 @@
   </head>
   <body>
     <header class="head">
-      <div>
+      <div class="top-line">
         <a id="logo" href="../index.html"
           ><img
             src="images/StLouisLogo-white.png"
@@ -22,18 +25,29 @@
         </ul>
       </div>
       <nav>
-        <ul class="nav-bar">
+        <ul class="nav-bar" id="nav-bar">
+          <li class="icon">
+            <a
+              href="javascript:void(0);"
+              style="font-size: 15px"
+              onclick="response()"
+              >&#9776;</a
+            >
+          </li>
           <li><a href="pages/tickets.html">Tickets</a></li>
           <li><a href="pages/weekends.html">Themed Weekends</a></li>
-          <li><a href="pages/tickets.html">Tickets</a></li>
+          <li>
+            <a href="pages/entertainment-vendor.html">Entertainers & Vendors</a>
+          </li>
           <li><a href="pages/cast.html">Cast</a></li>
-          <li><a href="pages/faq.html">FAQ</a></li>
+          <li><a href="pages/about-us.html">About us</a></li>
         </ul>
       </nav>
     </header>
     <main></main>
     <footer></footer>
 
-    <script src="main.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

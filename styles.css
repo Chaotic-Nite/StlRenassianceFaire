@@ -2,8 +2,36 @@
     by Noel Kling
  */
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-image: url("images/steelgray-print.jpg");
   background-size: cover;
-  margin: 0;
+  margin: 0 auto -50px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.divider {
+  height: 15vh;
+  width: 90%;
+  margin-bottom: -1%;
+}
+
+.sponsors {
+  text-align: center;
+  font-size: 24px;
+}
+
+.sponsors h2 {
+  margin: 7px 0 15px 0;
 }

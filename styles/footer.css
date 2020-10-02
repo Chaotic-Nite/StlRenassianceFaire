@@ -1,0 +1,27 @@
+.foot {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-image: url("../images/blueVariant-print.png");
+  background-position: bottom;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+#cr-tags img {
+  height: 80px;
+  width: 250px;
+}
+
+#cr-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5% 3% 10% 0;
+  font-size: 17px;
+}
+
+#cr-tags a {
+  color: #0d9aff;
+}

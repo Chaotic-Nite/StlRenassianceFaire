@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 // Photo Slides
 
-let photoIndex = 1;
+let photoIndex = Math.floor(Math.random() * (3 - 0) + 0);
 
 showPhotos(photoIndex);
 

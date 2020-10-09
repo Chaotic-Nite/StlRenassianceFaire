@@ -52,17 +52,41 @@
 }
 
 .caption-text {
-  color: #f2f2f2;
+  font-family: "Rock Salt", cursive;
+  color: #ffffff;
   font-size: 15px;
+  font-weight: bolder;
   padding: 8px 12px;
   position: absolute;
-  bottom: 2px;
+  bottom: 87%;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 #photo-one {
   background-image: url("../images/faire-pictures/joust-one.jpg");
+  background-size: cover;
   background-position-y: 40%;
   background-position-x: center;
+}
+
+#photo-two {
+  background-image: url("../images/faire-pictures/2018-kings.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+  background-position-x: 50%;
+}
+
+#photo-three {
+  background-image: url("../images/faire-pictures/dancing-one.jpg");
+  background-size: cover;
+  background-position-y: 45%;
+  background-position-x: center;
+}
+
+#photo-four {
+  background-image: url("../images/faire-pictures/pub-fight.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+  background-position-x: left;
 }

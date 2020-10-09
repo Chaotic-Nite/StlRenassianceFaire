@@ -46,3 +46,12 @@ main {
 .sponsors-container h2 {
   margin: 7px 0 15px 0;
 }
+
+.intro-container {
+  text-align: center;
+}
+
+.intro-container h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 75px;
+}

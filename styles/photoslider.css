@@ -1,5 +1,11 @@
+@media screen and (max-width: 600px) {
+  .picture-slide-container {
+    display: none;
+  }
+}
+
 .picture-slide-container {
-  max-width: 1000;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -10,6 +16,13 @@
 
 .photo-slides {
   display: none;
+  height: 350px;
+}
+
+.image-slide {
+  vertical-align: center;
+  max-width: 100%;
+  height: 60%;
 }
 
 .prev,
@@ -43,7 +56,13 @@
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 2px;
   width: 100%;
   text-align: center;
+}
+
+#photo-one {
+  background-image: url("../images/faire-pictures/joust-one.jpg");
+  background-position-y: 40%;
+  background-position-x: center;
 }

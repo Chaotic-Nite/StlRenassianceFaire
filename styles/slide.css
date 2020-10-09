@@ -1,5 +1,18 @@
 /* CSS about the Sponsors slider ONLY */
 
+@media screen and (max-width: 600px) {
+  .slide img {
+    max-height: 50px;
+    width: 100%;
+    margin-bottom: 15%;
+    border-radius: 25%;
+    border: 3px solid white;
+  }
+
+  .slick-slide {
+    margin: 0px 15px;
+  }
+}
 #pepsi {
   background: white;
 }
@@ -14,10 +27,6 @@
 
 .slick-slide {
   margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
 }
 
 .slick-slider {
@@ -88,6 +97,7 @@
   float: right;
 }
 .slick-slide img {
+  width: 100%;
   display: block;
 }
 .slick-slide.slick-loading img {

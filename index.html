@@ -6,7 +6,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
     <title>StlRenFest MockUp</title>
+    <link rel="shortcut icon" href="/images/StL-horse.png">
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/photoslider.css"/>
     <link rel="stylesheet" href="styles/slide.css" />
@@ -48,45 +52,44 @@
       </nav>
     </header>
     <main>
-      <div class="intro-container">
-        <p>
-          King Franscois and King Henry the VIII grace the quiet area of Petite
-          Lyon in Southern France during the Festival of insert year here.
-          <br />
-          The village of Petite Lyon is over seen by the 13 Counts of the City,
-          Lyon, and have seen fit to draw travelers, entertainers, peddlers and
-          crafts masters from across the country to entertain those who come.<br />
-          While the nobility visit who knows what intrigue will unfold.<br />
-          While the realm of mortals toils over their Festive plans the Lord of
-          the Forest holds his own court for revelries and a keen delight in
-          startling those of mortal kind and inspiring wonder in those with an
-          open mind.<br />
-          Jousts, music, fine foods and wares, friends new and old, and cheer
-          will appear.<br />
-        </p>
-        <p id="closing-line">Come and find what strikes you merry!</p>
-        <!-- Credit to Dan Blinn and his bullshittery skills to craft this -->
-      </div>
       <div class="picture-slide-container">
-        <div class="photo-slides">
-          <img src="images/fairy-overlay.jpg" />
+        <div class="photo-slides" id="photo-one">
           <div class="caption-text">Test 1</div>
         </div>
         <div class="photo-slides">
-          <img src="images/lion-overlay.jpg" />
+          <img class="image-slide" src="images/lion-overlay.jpg" />
           <div class="caption-text">Test 2</div>
         </div>
         <div class="photo-slides">
-          <img src="images/dragon-overlay.jpg" />
+          <img class="image-slide" src="images/dragon-overlay.jpg" />
           <div class="caption-text">Test 3</div>
         </div>
         <div class="photo-slides">
-          <img src="images/knight-overlay.jpg" />
+          <img class="image-slide" src="images/knight-overlay.jpg" />
           <div class="caption-text">Test 4</div>
         </div>
-
+        
         <a class="prev" onclick="imageSlides(-1)">&#10094</a>
         <a class="next" onclick="imageSlides(1)">&#10095</a>
+      </div>
+        <div class="intro-container">
+           <p>
+             King Franscois and King Henry the VIII grace the quiet area of Petite
+             Lyon in Southern France during the Festival of insert year here.
+             <br />
+             The village of Petite Lyon is over seen by the 13 Counts of the City,
+             Lyon, and have seen fit to draw travelers, entertainers, peddlers and
+             crafts masters from across the country to entertain those who come.<br />
+             While the nobility visit who knows what intrigue will unfold.<br />
+             While the realm of mortals toils over their Festive plans the Lord of
+             the Forest holds his own court for revelries and a keen delight in
+             startling those of mortal kind and inspiring wonder in those with an
+             open mind.<br />
+             Jousts, music, fine foods and wares, friends new and old, and cheer
+             will appear.<br />
+           </p>
+           <p id="closing-line">Come and find what strikes you merry!</p>
+           <!-- Credit to Dan Blinn and his bullshittery skills to craft this -->
       </div>
       <div class="sponsors-container">
         <img class="divider" src="/images/dragon-divider.png" />

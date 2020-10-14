@@ -22,6 +22,7 @@ body {
 body {
   background-image: url("images/steelgray-print.jpg");
   background-size: cover;
+
   margin: 0 auto -50px;
   overflow-x: hidden;
   display: flex;
@@ -48,10 +49,20 @@ main {
 }
 
 .intro-container {
-  text-align: center;
+  margin: 0 5% 5% 5%;
+  font-size: 24px;
+  border-bottom: 5px solid #5000e6b6;
 }
 
 .intro-container h1 {
+  margin-bottom: 0.5%;
+
+  text-align: center;
   font-family: "Tangerine", cursive;
   font-size: 75px;
+}
+
+#closing-line {
+  text-align: center;
+  font-weight: 700;
 }

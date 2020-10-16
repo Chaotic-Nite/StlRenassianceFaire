@@ -107,12 +107,10 @@ nav {
 }
 
 .nav-bar {
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: auto;
+  width: 100%;
 
   background-image: url("../images/blue-abstract-nav.png");
   background-size: cover;
@@ -120,13 +118,17 @@ nav {
 }
 
 .nav-bar a {
-  position: none;
+  float: left;
+  display: inline-block;
+
   color: white;
   text-align: center;
   padding: 0.8em 0.5em;
   font-size: 24px;
   white-space: normal;
-  display: block;
+
+  width: 20%;
+
   height: 100%;
 }
 

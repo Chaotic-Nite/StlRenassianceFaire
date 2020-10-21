@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
+
     <header class="head">
       <div class="top-line">
         <a id="logo" href="../index.html"
@@ -44,9 +45,10 @@
             >
           </li>
           <li><a href="pages/tickets.html">Tickets</a></li>
-          <li><a href="pages/weekends.html">Themed Weekends</a></li>
+          <li><a href="pages/weddings.html">Weddings</a></li>
+          <li><a id="weekends" href="pages/weekends.html">Themed Weekends</a></li>
           <li>
-            <a href="pages/entertainment-vendor.html">Entertainers & Vendors</a>
+            <a id="entertain" href="pages/entertainment-vendor.html">Entertainers & Vendors</a>
           </li>
           <li><a href="pages/cast.html">Cast</a></li>
           <li><a href="pages/about-us.html">About us</a></li>
@@ -71,8 +73,9 @@
         <a class="prev" onclick="imageSlides(-1)">&#10094</a>
         <a class="next" onclick="imageSlides(1)">&#10095</a>
       </div>
-        <div class="intro-container">
+        <div class="intro-container margin-width">
           <h1>Welcome to Petite Lyon</h1>
+          <h3>The Saint Louis Renaissance Festival</h3>
            <p>
              King Franscois and King Henry the VIII grace the quiet area of Petite
              Lyon in Southern France during the Festival of the 1520s.
@@ -92,17 +95,41 @@
            <p id="closing-line">Come and find what strikes you merry!</p>
            <!-- Credit to Dan Blinn and his bullshittery skills to craft this -->
       </div>
-      <div class="news-line">
-         
-      </div>
 
-      <div class="social-media">
+      
+      <div class="social-media margin-width">
         <h1>Follow us on:</h1>
         <div class="social-links">
-        <a href="https://www.facebook.com/STLRenFest/" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/stlrenfest" class="fa fa-twitter"></a>
-        <a href="https://www.pinterest.com/stlouisrenaissa/" class="fa fa-pinterest"></a>
-        <a href="https://www.instagram.com/stlrenfest/" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com/STLRenFest/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/stlrenfest" class="fa fa-twitter"></a>
+          <a href="https://www.pinterest.com/stlouisrenaissa/" class="fa fa-pinterest"></a>
+          <a href="https://www.instagram.com/stlrenfest/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <div class="email-list margin-width">
+        <div class="subscribe-email">
+           <h2>Sign up for our email list!</h2>
+           <div class="news-msg-holder"><div class="news-error">
+           
+            Please enter a valid email address 
+
+            <br>
+            
+          </div> </div>
+           <form >
+             <div>
+           <label for="email-input">Email Address* </label>
+           <input type="email" name="email-input" id="email" maxlength="255" required>
+          </div>
+            <div>
+           <label> Are you also interested in hearing about these events?</label>
+           <div>
+           <input type="checkbox" name="tofTears" id="tofTears" value="469">
+           Trail of Terror
+          </div>
+        </div>
+        <input type="submit" name="subscribe" id="subscribe" value="Subscribe">
+          </form>
         </div>
       </div>
       <div class="sponsors-container">

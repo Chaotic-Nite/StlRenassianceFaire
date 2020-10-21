@@ -33,10 +33,16 @@ body {
 
 main {
   flex: 1 0 auto;
+  font-size: 24px;
 }
 
 h1 {
   font-family: "Tangerine", cursive;
+}
+
+.margin-width {
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 /* Sponsors */
@@ -61,15 +67,23 @@ h1 {
 .intro-container {
   margin: 0 5% 5% 5%;
   padding: 0 7px;
-  font-size: 24px;
   border-bottom: 5px solid #5000e6b6;
+}
+
+.intro-container h1,
+.intro-container h3 {
+  text-align: center;
 }
 
 .intro-container h1 {
   margin-bottom: 0.5%;
-
-  text-align: center;
   font-size: 75px;
+}
+
+.intro-container h3 {
+  font-family: "Sansita Swashed", cursive;
+  margin-top: 0.5%;
+  margin-bottom: 4%;
 }
 
 #closing-line {
@@ -85,6 +99,7 @@ h1 {
   align-items: center;
   margin-top: -7%;
   white-space: nowrap;
+  border-bottom: 5px solid #5000e6b6;
 }
 
 .social-media h1 {
@@ -99,7 +114,8 @@ h1 {
   text-align: center;
   text-decoration: none;
   color: whitesmoke;
-  margin: 5px 10px;
+  margin: 5px 7px;
+  margin-bottom: 25px;
   border-radius: 15%;
 }
 
@@ -125,6 +141,37 @@ h1 {
 
 .fa-instagram {
   background: #125688;
+}
+
+/* Email Newsletter */
+.news-msg-holder {
+  display: none;
+}
+
+.email-list {
+  display: flex;
+  justify-content: center;
+  background-color: #ffae0073;
+  padding-bottom: 3%;
+  margin: 2.5% 5%;
+  border-radius: 1%;
+
+  text-align: center;
+}
+
+.subscribe-email div {
+  margin-top: 5px;
+}
+
+#subscribe {
+  margin-top: 15px;
+}
+
+#email {
+  border: 1px solid whitesmoke;
+  padding: 7px;
+  border-radius: 8px;
+  font-size: 17px;
 }
 
 /* Cast & Warriors */

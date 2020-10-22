@@ -10,15 +10,31 @@ function response() {
   }
 }
 
-function scrollNav() {
-  let defaultNav = document.getElementById("nav-bar").style.top;
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("nav-bar").style.top = "0";
-  } else {
-    document.getElementById("nav-bar").style.top = defaultNav;
-  }
-}
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+
+mainNavLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    let target = document.querySelector(event.target.hash);
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
 
 window.onscroll = function () {
-  scrollNav;
+  navScroll();
 };
+
+var navbar = document.getElementById("navEl-navBar");
+
+var sticky = navbar.offsetTop;
+
+function navScroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

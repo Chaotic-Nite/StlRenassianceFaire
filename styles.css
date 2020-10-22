@@ -11,12 +11,17 @@
 
 /* Bulk of general */
 
+:root {
+  --borderDesign: 5px solid #5000e6b6;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
 }
@@ -45,21 +50,44 @@ h1 {
   margin-left: 5%;
 }
 
-/* Sponsors */
-
-.divider {
-  height: 15vh;
-  width: 90%;
-  margin-bottom: -1%;
-}
-
-.sponsors-container {
+/* Collapsable Sections */
+.collapsible {
+  border: none;
+  outline: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 27px;
+  padding: 20px;
+  width: 100%;
 }
 
-.sponsors-container h2 {
-  margin: 7px 0 15px 0;
+.content {
+  padding: 0 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* Attention Space */
+
+#attention-div {
+  margin: 2% 0;
+}
+
+.attention-bttn {
+  background-color: rgb(190, 42, 42);
+  color: white;
+}
+
+.attention-bttn:hover {
+  background-color: rgb(102, 22, 22);
+}
+
+#attention-text {
+  background-color: #ffae0073;
+}
+
+#attention-text a {
+  color: #5100e6;
 }
 
 /* Introduction Text */
@@ -67,7 +95,8 @@ h1 {
 .intro-container {
   margin: 0 5% 5% 5%;
   padding: 0 7px;
-  border-bottom: 5px solid #5000e6b6;
+  border-top: var(--borderDesign);
+  border-bottom: var(--borderDesign);
 }
 
 .intro-container h1,
@@ -91,6 +120,14 @@ h1 {
   font-weight: 700;
 }
 
+/* Cast & Warriors */
+
+.warriors {
+  border: 25px solid #b88846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+    25;
+}
+
 /* Social Media */
 
 .social-media {
@@ -99,7 +136,7 @@ h1 {
   align-items: center;
   margin-top: -7%;
   white-space: nowrap;
-  border-bottom: 5px solid #5000e6b6;
+  border-bottom: var(--borderDesign);
 }
 
 .social-media h1 {
@@ -144,6 +181,7 @@ h1 {
 }
 
 /* Email Newsletter */
+
 .news-msg-holder {
   display: none;
 }
@@ -174,10 +212,19 @@ h1 {
   font-size: 17px;
 }
 
-/* Cast & Warriors */
+/* Sponsors */
 
-.warriors {
-  border: 25px solid #b88846;
-  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
-    25;
+.divider {
+  height: 15vh;
+  width: 90%;
+  margin-bottom: -1%;
+}
+
+.sponsors-container {
+  text-align: center;
+  font-size: 24px;
+}
+
+.sponsors-container h2 {
+  margin: 7px 0 15px 0;
 }

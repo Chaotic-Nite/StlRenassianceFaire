@@ -1,5 +1,6 @@
 const cast = {
   court: [
+    "The royalty and noblity at the faire grounds. They perform they're noble duties whilst running amok in the crowds.",
     {
       realName: "Joseph Fieger",
       role: "Thomas Wolsey",
@@ -64,8 +65,8 @@ const cast = {
       image: "",
     },
   ],
-  fae: [],
-  fighter: [
+  fae: ['The fairies, elves, and mystic beings who bring life to the wilderness', {}],
+  fighter: ['The fighters are the ones who intent to put on a show in the lanes with some form of weaponry'
     {
       realName: "Dan Blinn",
       role: "Reynold",
@@ -79,5 +80,10 @@ const cast = {
       image: "",
     },
   ],
-  traveler: [],
+  traveler: ["The traders, craftmaen, entertainers, and their own brand of royalty as they're their own traveling village",
+    {realName: "David Hernandez", role: "Mauritz", position: "Hunter/Tradesman"},
+    {realName: "Susanna Ennenbach", role: "Sasha", position: "Herbalist"},
+    {realName: "Catherine Kuehner", role: "Volyana", position: "Entertainer"},
+    {realName: "Grace Mays", role: "Katerina", position: ""},
+    {realName: "Krista Strahm", role: "Zelma", position: "Matriarch"}],
 };

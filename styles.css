@@ -7,6 +7,14 @@
     text-align: center;
     font-size: 20px;
   }
+
+  .ren-faire {
+    width: 100%;
+  }
+
+  .les-amis {
+    width: 100%;
+  }
 }
 
 /* Bulk of general */
@@ -43,6 +51,10 @@ main {
 
 h1 {
   font-family: "Tangerine", cursive;
+}
+
+a {
+  color: #5100e6;
 }
 
 .margin-width {
@@ -86,10 +98,6 @@ h1 {
   background-color: #ffae0073;
 }
 
-#attention-text a {
-  color: #5100e6;
-}
-
 /* Introduction Text */
 
 .intro-container {
@@ -116,8 +124,35 @@ h1 {
 }
 
 #closing-line {
+  padding-top: 10px;
   text-align: center;
   font-weight: 700;
+}
+
+/* Dates */
+.dates {
+  text-align: center;
+  padding-bottom: 3%;
+  border-bottom: var(--borderDesign);
+}
+
+/* Other Events */
+.other-events {
+  padding: 0 5%;
+  padding-bottom: 5px;
+  border-bottom: var(--borderDesign);
+}
+
+.other-events h2 {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: -15px;
+}
+
+.other-events span {
+  color: #ff7300;
+  text-decoration: underline;
 }
 
 /* Cast & Warriors */
@@ -134,7 +169,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -7%;
+  margin-top: -1%;
   white-space: nowrap;
   border-bottom: var(--borderDesign);
 }
@@ -227,4 +262,107 @@ h1 {
 
 .sponsors-container h2 {
   margin: 7px 0 15px 0;
+}
+
+/* FAQ */
+.faq-q::-webkit-details-marker {
+  color: #5000e6b6;
+}
+
+.faq-a a {
+  text-decoration: dotted underline;
+  color: #ff7300;
+}
+
+/* Ticketing */
+
+.ticket-setup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+}
+
+table,
+th {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0 10px;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+}
+
+.ticket-boxes {
+  box-sizing: border-box;
+}
+
+.ren-faire {
+  width: 33.3%;
+}
+
+.les-amis {
+  margin-left: auto;
+  width: 49.5%;
+}
+
+.ren-faire,
+.les-amis {
+  float: left;
+  padding: 8px;
+}
+
+.les-ul,
+.ticket-ul {
+  list-style-type: none;
+  border: 7px ridge #fcce17;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.les-ul:hover,
+.ticket-ul:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.les-ul .les-header,
+.ticket-ul .ren-gen {
+  background-color: #1502be;
+  color: whitesmoke;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.les-ul li,
+.ticket-ul li {
+  border-bottom: 1px solid rgb(206, 206, 206);
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ticket-contact {
+  margin-top: -20px;
+}
+
+.rf-la-bttn {
+  background-color: #ff7300;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
 }

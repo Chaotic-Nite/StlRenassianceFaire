@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+  #cr-tags img {
+    width: 150px;
+  }
+}
+
 .foot {
   flex-shrink: 0;
   display: flex;
@@ -9,6 +15,12 @@
   color: whitesmoke;
 }
 
+.foot a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Copyright tags and Logo */
 #cr-tags img {
   height: 80px;
   width: 250px;
@@ -24,4 +36,24 @@
 
 #cr-tags a {
   color: #0d9aff;
+}
+
+/* General and Realm adjustments */
+#general,
+#realm {
+  display: flex;
+  flex-direction: column;
+}
+
+#reasons {
+  padding-bottom: 15px;
+}
+
+#reasons p {
+  margin-top: -10px;
+}
+
+#general a,
+#realm a {
+  margin-bottom: 15px;
 }

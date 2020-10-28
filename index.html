@@ -11,17 +11,24 @@
     <title>StlRenFest MockUp</title>
     <link rel="shortcut icon" href="/images/StL-horse.png">
 
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rock+Salt&family=Sansita+Swashed&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles/photoslider.css"/>
-    <link rel="stylesheet" href="styles/slide.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    
+    <!-- Main Page Sliders -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/photoslider.css"/>
+    <link rel="stylesheet" href="styles/slide.css" />
   </head>
   <body>
 
     <header class="head">
+      <!-- Logo, FAQ, Contact Us, Directions Here -->
       <div class="top-line">
         <a id="logo" href="../index.html"
           ><img
@@ -35,6 +42,8 @@
         </ul>
       </div>
     </header>
+
+    <!-- Navigation Bar with Dropdown Quick Links -->
         <nav id="navEl-navBar">
           <ul class="nav-bar" id="nav-bar">
             <li class="icon">
@@ -45,31 +54,31 @@
                 >&#9776;</a
               >
             </li>
-            <li><a href="pages/tickets.html">Tickets</a></li>
-            <li><a href="pages/weddings.html">Weddings</a></li>
-            <li><a id="weekends" href="pages/weekends.html">Themed Weekends</a></li>
+            <li><a class="small-tab" href="pages/tickets.html">Tickets</a></li>
+            <li><a class="small-tab" href="pages/weddings.html">Weddings</a></li>
+            <li><a id="weekends" class="small-tab" href="pages/weekends.html">Themed Weekends</a></li>
             <li>
               <a id="entertain" href="pages/entertainment-vendor.html">Entertainers & Vendors</a>
             </li>
-            <li><a href="pages/cast.html">Cast</a></li>
-            <li><a href="pages/about-us.html">About us</a></li>
+            <li><a class="small-tab" href="/pages/cast.html">Cast</a></li>
+            <li><a class="small-tab" href="pages/about-us.html">About us</a></li>
           </ul>
         </nav>
     <main>
 
 
-      <!-- Picture Banner At Top of Page -->
+      <!-- Slide Picture Banner At Top of Page -->
       <div class="picture-slide-container">
-        <div class="photo-slides" id="photo-one">
+        <div class="photo-slides w3-animate-fading" id="photo-one">
           <div class="caption-text">Photo by Joe Henley</div>
         </div>
-        <div class="photo-slides" id="photo-two">
+        <div class="photo-slides w3-animate-fading" id="photo-two">
           <div class="caption-text">Photo by Joe Henley</div>
         </div>
-        <div class="photo-slides" id="photo-three">
+        <div class="photo-slides w3-animate-fading" id="photo-three">
           <div class="caption-text">Photo by Joe Henley</div>
         </div>
-        <div class="photo-slides" id="photo-four">
+        <div class="photo-slides w3-animate-fading" id="photo-four">
           <div class="caption-text">Photo by Joe Henley</div>
         </div>
         
@@ -88,7 +97,7 @@
               <br><br>
               By visiting the Saint Louis Renaissance Festival you voluntarily assume all risks related to exposure to COVID-19.
               <br><br>
-              For more COVID-19 protocols, <a class="external-links" href="http://www.stlrenfest.com/stlrenfest_2017/wp-content/uploads/2020/09/2020-STL-Draft-preparedness-plan-2.pdf">click here</a>.
+              For more COVID-19 protocols, <a class="external-links" href="/pdf-files/2020-STL-Draft-preparedness-plan-2.pdf">click here</a>.
               <br><br>
               The safety of our Patrons and Participants is our number one priority. Please do not attend the festival if you answer yes to any of the questions below. Any ticket purchased for the season and not redeemed in 2020 will be good for  the 2021 season. <br>
               A. Have you or anyone in your household tested positive or been exposed to someone who has tested positive for Covid-19 in the last two weeks? <br>
@@ -126,6 +135,19 @@
            <!-- Credit to Dan Blinn and his bullshittery skills to craft this -->
       </div>
 
+      <!-- Dates -->
+      <div class="dates margin-width">
+        <h2>Open Weekends for 2021 TBA</h2>
+        <h3>10am - 6pm Rain or Shine</h3>
+        <h3 style="font-variant: small-caps;">Free Parking</h3>
+      </div>
+
+      <div class="other-events margin-width">
+        <span><h2>Kegs N Eggs</h2></span>
+        <p style="font-size: 30px;">Tickets are on sale <u>NOW</u> for the 2021 Season on April 10th 2021!<br>
+      <a href="pages/tickets.html">Click Here</a> to view ticket prices and options! <br>
+       Early bird pricing ends April 3rd.</p>
+      </div>
       
       <!-- Social Media Section -->
       <div class="social-media margin-width">
@@ -240,14 +262,40 @@
           All rights reserved. <a href="sitemap.html">sitemap</a>
         </p>
       </div>
-      <div id="general">
-        <h3>General Information</h3>
+
+      <!-- Reasons to Attend -->
+      <div id="reasons">
+        <h3>Reasons to Attend:</h3>
+        <p>Free Parking</p> 
+        <p>Live Armored Jousting</p>
+        <p>Various Bars, Pubs and Taverns</p>
+        <p>GOT Throne of Swords</p>
+        <p>Pub Crawls</p>
+        <p>Aerial Act</p>
+        <p>Escape Room</p> 
+        <p>Live Unicorns</p>
+        <p>Archery</p>
+        <p>Turkey Legs</p>
+        <p>Mermaid Cove</p>
+        <p>And More!</p>
       </div>
 
+      <!-- General Information -->
+      <div id="general">
+        <h3>General Information</h3>
+        <a href="/pages/tickets.html">Buy Tickets</a>
+        <a href="/pages/bring-your-dog.html">Bring your Dog</a>
+        <a href="/pages/faq.html">FAQ</a>
+        <a href="/pages/site-employment.html">Employment</a>
+        <a href="/pages/contact-us.html">Contact Us</a>
+      </div>
+
+      <!-- Exploring the Realm-->
       <div id="realm">
         <h3>Explore the Realm</h3>
       </div>
     </footer>
+
     <script
       src="//code.jquery.com/jquery-2.2.0.min.js"
       type="text/javascript"

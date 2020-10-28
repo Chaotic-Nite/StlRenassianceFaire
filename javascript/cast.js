@@ -65,8 +65,12 @@ const cast = {
       image: "",
     },
   ],
-  fae: ['The fairies, elves, and mystic beings who bring life to the wilderness', {}],
-  fighter: ['The fighters are the ones who intent to put on a show in the lanes with some form of weaponry'
+  fae: [
+    "The fairies, elves, and mystic beings who bring life to the wilderness",
+    {},
+  ],
+  fighter: [
+    "The fighters are the ones who intent to put on a show in the lanes with some form of weaponry",
     {
       realName: "Dan Blinn",
       role: "Reynold",
@@ -80,10 +84,59 @@ const cast = {
       image: "",
     },
   ],
-  traveler: ["The traders, craftmaen, entertainers, and their own brand of royalty as they're their own traveling village",
-    {realName: "David Hernandez", role: "Mauritz", position: "Hunter/Tradesman", image: "",},
-    {realName: "Susanna Ennenbach", role: "Sasha", position: "Herbalist", image: "",},
-    {realName: "Catherine Kuehner", role: "Volyana", position: "Entertainer", image: "",},
-    {realName: "Grace Mays", role: "Katerina", position: "", image: "",},
-    {realName: "Krista Strahm", role: "Zelma", position: "Matriarch", image: "",}],
+  traveler: [
+    "The traders, craftmaen, entertainers, and their own brand of royalty as they're their own traveling village",
+    {
+      realName: "David Hernandez",
+      role: "Mauritz",
+      position: "Hunter/Tradesman",
+      image: "",
+    },
+    {
+      realName: "Susanna Ennenbach",
+      role: "Sasha",
+      position: "Herbalist",
+      image: "",
+    },
+    {
+      realName: "Catherine Kuehner",
+      role: "Volyana",
+      position: "Entertainer",
+      image: "",
+    },
+    { realName: "Grace Mays", role: "Katerina", position: "", image: "" },
+    {
+      realName: "Krista Strahm",
+      role: "Zelma",
+      position: "Matriarch",
+      image: "",
+    },
+  ],
 };
+
+// Those of who we have lost
+const warriors = [
+  "Ashley Lieble",
+  "Alex Ryan Harkins",
+  "Bill Cook",
+  "Bob Swank",
+  "Connie Jacobi",
+  "Cyd Donaldson-Sprowel",
+  "Donna Morris",
+  "Ed Fliss",
+  "Ellen D. Ross",
+  "Fran Kirkland",
+  "Jack Hathmann",
+  "Jesse Linder",
+  "Joe Henley",
+  "Kennith Brown",
+  "Kurt Kuiser",
+  "Melvin Due",
+  "Michael Hesselback Jr",
+  "Red Pruitt",
+  "Renee Ewart",
+  "Sandy Goodall",
+  "Terry N. Sofian",
+  "Tim Robinson",
+  "Tim Shepherd",
+];

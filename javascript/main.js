@@ -26,8 +26,10 @@ $(document).ready(function () {
 
 // Photo Slides
 var photoIndex = Math.floor(Math.random() * (3 - 0) + 0);
+let photoSlides = document.getElementsByClassName("photo-slides");
 
 showPhotos(photoIndex);
+photoCarousel();
 
 function imageSlides(num) {
   showPhotos((photoIndex += num));
@@ -38,17 +40,28 @@ function currentSlide(num) {
 }
 
 function showPhotos(num) {
-  let slides = document.getElementsByClassName("photo-slides");
-  if (num > slides.length) {
+  if (num > photoSlides.length) {
     photoIndex = 1;
   }
   if (num < 1) {
-    photoIndex = slides.length;
+    photoIndex = photoSlides.length;
   }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  for (let i = 0; i < photoSlides.length; i++) {
+    photoSlides[i].style.display = "none";
   }
-  slides[photoIndex - 1].style.display = "block";
+  photoSlides[photoIndex - 1].style.display = "block";
+}
+
+function photoCarousel() {
+  for (let i = 0; i < photoSlides.length; i++) {
+    photoSlides[i].style.display = "none";
+  }
+  photoIndex++;
+  if (photoIndex > photoSlides.length) {
+    photoIndex = 1;
+  }
+  photoSlides[photoIndex - 1].style.display = "block";
+  setTimeout(photoCarousel, 8000);
 }
 
 // Newsletter Email

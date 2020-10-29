@@ -67,7 +67,6 @@ const cast = {
   ],
   fae: [
     "The fairies, elves, and mystic beings who bring life to the wilderness",
-    {},
   ],
   fighter: [
     "The fighters are the ones who intent to put on a show in the lanes with some form of weaponry",
@@ -111,6 +110,9 @@ const cast = {
       position: "Matriarch",
       image: "",
     },
+  ],
+  village: [
+    "Those who enjoy their day to day live in Petit Lyon with crafts and simple peace of the festivals.",
   ],
 };
 

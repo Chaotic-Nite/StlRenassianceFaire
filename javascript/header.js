@@ -9,7 +9,7 @@ function response() {
     resNav.className = "nav-bar";
   }
 }
-
+/*
 window.onscroll = function () {
   navScroll();
 };
@@ -25,3 +25,4 @@ function navScroll() {
     navbar.classList.remove("sticky");
   }
 }
+*/

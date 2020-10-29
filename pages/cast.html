@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
   </head>
-  <body>
+  <body onload="castLoad()">
     <header class="head">
       <!-- Logo, FAQ, Contact Us, Directions Here -->
       <div class="top-line">
@@ -36,8 +36,8 @@
     </header>
 
     <main>
-      <div class="current"></div>
-      <div class="warriors" id="warriors">
+      <div class="current margin-width" id="current"></div>
+      <div class="warriors margin-width" id="warriors">
         <h2>In Memory</h2>
         <p style="font-size: 27px">
           Of the volunteers of the <br />
@@ -55,7 +55,41 @@
       src="//code.jquery.com/jquery-2.2.0.min.js"
       type="text/javascript"
     ></script>
-    <script src="javascript/header.js"></script>
-    <script src="javascript/main.js"></script>
+    <script src="/javascript/header.js"></script>
+    <script src="/javascript/cast.js"></script>
+    <script>
+      //Cast Load
+      function castLoad() {
+        console.log(cast);
+        let guildArr = ["Court", "Fae", "Fighter", "Traveler", "Village"];
+        let castList = document.getElementById("current");
+        let warriorList = document.getElementById("warriors");
+
+        let i = 0;
+        for (let guildSet in cast) {
+          let detail = document.createElement("details");
+          let guild = document.createElement("summary");
+          guild.classList.add("guild");
+          guild.innerHTML = guildArr[i];
+          detail.append(guild);
+          console.log(cast[guildSet]);
+          for (let character in cast[guildSet]) {
+            console.log(character);
+            console.log(guildSet.indexOf(character));
+            if (character === 0) {
+              let intro = document.createElement("p");
+              intro.innerText = character;
+              detail.append(intro);
+            } else {
+              let castChara = document.createElement("div");
+              castChara.innerHTML = `<img
+              src="${character.image}" />`;
+            }
+          }
+          castList.append(detail);
+          i++;
+        }
+      }
+    </script>
   </body>
 </html>

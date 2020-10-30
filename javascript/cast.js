@@ -50,6 +50,7 @@ const cast = {
       position:
         "Princess of Portugal and Spain, ArchDuchess of Austria, Duchess of Braganza",
       image: "/images/cast/kathleen-whalen.jpg",
+      leadership: "Court Guild Lead",
     },
     {
       realName: "Sheana Godwin",
@@ -110,7 +111,7 @@ const cast = {
       realName: "Dan Blinn",
       role: "Reynold",
       position: "Hired Mercenary",
-      image: "/images/cast/dan-blinn.jpg",
+      image: "/images/cast/dan-blinn-placeholder.jpg",
     },
     {
       realName: "Noel Kling",

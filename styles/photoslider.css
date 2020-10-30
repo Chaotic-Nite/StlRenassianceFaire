@@ -5,6 +5,7 @@
 }
 
 .picture-slide-container {
+  z-index: 2;
   max-width: 100%;
   position: relative;
   margin: auto;

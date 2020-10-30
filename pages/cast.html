@@ -39,6 +39,9 @@
       <div class="current margin-width" id="current">
         <h2>Cast of the St Louis Renaissance Festival</h2>
       </div>
+      <div class="current margin-width">
+        <a href="/pages/warriors-island.html">Click here for Warriors Island</a>
+      </div>
     </main>
 
     <script
@@ -73,13 +76,21 @@
               j++;
             } else {
               let castChara = document.createElement("div");
+              let secondDiv = document.createElement("div");
               castChara.classList.add("cast-list");
+              secondDiv.classList.add("character-text");
               castChara.innerHTML = `<img class="cast-picture"
-              src="${guildOjb[character].image}" alt="${guildOjb[character].realName}"/> 
-              <div class="character-text">
-                <p>Name: ${guildOjb[character].realName}</p>
-                <p>Character Portraying:  ${guildOjb[character].role}</p>
-                <p>Character Position: ${guildOjb[character].position}</div>`;
+              src="${guildOjb[character].image}" alt="${guildOjb[character].realName}"/> `;
+              if (guildOjb[character].hasOwnProperty("leadership")) {
+                let lead = document.createElement("p");
+                lead.classList.add("guild-lead");
+                lead.innerText += `*${guildOjb[character].leadership}*`;
+                secondDiv.append(lead);
+              }
+              secondDiv.innerHTML += `<p>Name: ${guildOjb[character].realName}</p>
+               <p>Character Portraying:  ${guildOjb[character].role}</p>
+               <p>Character Position: ${guildOjb[character].position}`;
+              castChara.append(secondDiv);
               detail.append(castChara);
             }
           }

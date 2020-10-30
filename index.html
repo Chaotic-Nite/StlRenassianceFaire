@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rock+Salt&family=Sansita+Swashed&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     
+    
     <!-- Main Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     
     <!-- Main Page Sliders -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/photoslider.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/slide.css" />
   </head>
   <body>
@@ -54,7 +55,13 @@
                 >&#9776;</a
               >
             </li>
-            <li><a class="small-tab" href="pages/tickets.html">Tickets</a></li>
+            <li><a class="small-tab drop" href="pages/tickets.html">Tickets</a>
+            <ul class="drop-menu">
+              <li><a href="/pages/tickets.html#general-tickets">Renaissance Tickets</a></li>
+              <li><a href="/pages/tickets.html#les-amis">Les Amis Tickets</a></li>
+              <li><a href="/pages/tickets.html#kegs">Kegs N Eggs Tickets</a></li>
+            </ul>
+          </li>
             <li><a class="small-tab" href="pages/weddings.html">Weddings</a></li>
             <li><a id="weekends" class="small-tab" href="pages/weekends.html">Themed Weekends</a></li>
             <li>
@@ -63,18 +70,17 @@
             <li>
               <a class="small-tab drop" href="/pages/cast.html">Cast</a>
               <ul class="drop-menu">
-                <li><a href="#">RAwr</a></li>
-                <li><a href="#">Testing</a></li>
                 <li><a href="/pages/warriors-island.html">Warriors Island</a></li>
               </ul>
-              </li>
+            </li>
             <li><a class="small-tab" href="pages/about-us.html">About us</a></li>
           </ul>
         </nav>
-    <main>
-
-
-      <!-- Slide Picture Banner At Top of Page -->
+        <main>
+          
+          
+          <!-- Slide Picture Banner At Top of Page
+          -->
       <div class="picture-slide-container">
         <div class="photo-slides w3-animate-fading" id="photo-one">
           <div class="caption-text">Photo by Joe Henley</div>
@@ -92,7 +98,6 @@
         <a class="prev" onclick="imageSlides(-1)">&#10094</a>
         <a class="next" onclick="imageSlides(1)">&#10095</a>
       </div>
-
 
         <!-- WARNING/ATTENTION SPACE SIGN -->
         <div id="attention-div">

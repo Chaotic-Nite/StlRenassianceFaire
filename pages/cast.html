@@ -36,18 +36,8 @@
     </header>
 
     <main>
-      <div class="current margin-width" id="current"></div>
-      <div class="warriors margin-width" id="warriors">
-        <h2>In Memory</h2>
-        <p style="font-size: 27px">
-          Of the volunteers of the <br />
-          St. Louis Renaissance Faire & Festival <br />
-          that poured their heart's and soul's into building this village<br />
-          in order to entertain and educate our patrons. <br />
-          And while their spirits may have moved on, <br />
-          the love and bonds that helped create this magical place <br />
-          are always in our hearts.
-        </p>
+      <div class="current margin-width" id="current">
+        <h2>Cast of the St Louis Renaissance Festival</h2>
       </div>
     </main>
 
@@ -63,29 +53,37 @@
         console.log(cast);
         let guildArr = ["Court", "Fae", "Fighter", "Traveler", "Village"];
         let castList = document.getElementById("current");
-        let warriorList = document.getElementById("warriors");
 
-        let i = 0;
-        for (let guildSet in cast) {
+        let i = 0,
+          j = 0;
+        for (const guildSet in cast) {
           let detail = document.createElement("details");
           let guild = document.createElement("summary");
+          let guildOjb = cast[guildSet];
           guild.classList.add("guild");
+          guild.classList.add(`${guildArr[i].toLowerCase()}-guild`);
           guild.innerHTML = guildArr[i];
-          detail.append(guild);
-          console.log(cast[guildSet]);
-          for (let character in cast[guildSet]) {
-            console.log(character);
-            console.log(guildSet.indexOf(character));
-            if (character === 0) {
+          j = 0;
+          for (const character in guildOjb) {
+            if (j === 0) {
               let intro = document.createElement("p");
-              intro.innerText = character;
-              detail.append(intro);
+              intro.innerText = guildOjb[character];
+              intro.classList.add("intro-p");
+              guild.append(intro);
+              j++;
             } else {
               let castChara = document.createElement("div");
-              castChara.innerHTML = `<img
-              src="${character.image}" />`;
+              castChara.classList.add("cast-list");
+              castChara.innerHTML = `<img class="cast-picture"
+              src="${guildOjb[character].image}" alt="${guildOjb[character].realName}"/> 
+              <div class="character-text">
+                <p>Name: ${guildOjb[character].realName}</p>
+                <p>Character Portraying:  ${guildOjb[character].role}</p>
+                <p>Character Position: ${guildOjb[character].position}</div>`;
+              detail.append(castChara);
             }
           }
+          detail.append(guild);
           castList.append(detail);
           i++;
         }

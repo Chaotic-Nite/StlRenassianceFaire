@@ -46,7 +46,7 @@ const cast = {
     },
     {
       realName: "Kat Whalen",
-      role: "Princess Katherine",
+      role: "Princess Catherine",
       position:
         "Princess of Portugal and Spain, ArchDuchess of Austria, Duchess of Braganza",
       image: "/images/cast/kathleen-whalen.jpg",
@@ -151,6 +151,7 @@ const cast = {
       role: "Zelma",
       position: "Matriarch",
       image: "/images/cast/krista-strahm.jpg",
+      leadership: "*Traveler Guild Lead*",
     },
   ],
   Village: [

@@ -157,6 +157,11 @@ a {
   font-weight: bold;
 }
 
+/* MAF */
+.maf {
+  padding-top: 15px;
+}
+
 /* Other Events */
 .other-events {
   padding: 0 5%;
@@ -174,6 +179,10 @@ a {
 .other-events span {
   color: #ff7300;
   text-decoration: underline;
+}
+
+.other-events p {
+  font-size: 30px;
 }
 
 /* Cast & Warriors */

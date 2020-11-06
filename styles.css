@@ -570,3 +570,12 @@ th {
 #le-amis-title {
   margin: 3px 0 -17px 0;
 }
+
+/* Google Map */
+
+#map {
+  margin: 15px 0;
+  border: 8.5px double gold;
+  height: 550px;
+  width: 450px;
+}

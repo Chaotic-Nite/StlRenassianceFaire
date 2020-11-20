@@ -181,6 +181,7 @@ const warriors = [
   "Owain Phyfe",
   "Red Pruitt",
   "Renee Ewart",
+  "Richard C. Mintzlaff",
   "Sandy Goodall",
   "Terry N. Sofian",
   "Tim Robinson",

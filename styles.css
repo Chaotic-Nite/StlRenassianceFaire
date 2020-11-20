@@ -571,6 +571,16 @@ th {
   margin: 3px 0 -17px 0;
 }
 
+.dog-box {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
 /* Google Map */
 
 #map {
